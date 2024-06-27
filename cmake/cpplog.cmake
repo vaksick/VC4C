@@ -1,4 +1,4 @@
-
+set(DISABLE_UNINSTALL_TARGET TRUE)
 	# TODO disabled for now, since cpplog uninstall target conflicts with VC4C uninstall target
 	include(FetchContent)
 	FetchContent_Declare(cpplog GIT_REPOSITORY https://github.com/doe300/cpplog.git GIT_TAG v0.6)
