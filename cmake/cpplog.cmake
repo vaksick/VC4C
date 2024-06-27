@@ -22,4 +22,4 @@ set(DISABLE_UNINSTALL_TARGET TRUE)
 	FetchContent_GetProperties(cpplog SOURCE_DIR CPPLOG_SOURCE_DIR)
 	
 	add_library(cpplog-dependencies STATIC IMPORTED)
-	set(cpplog_LIBS cpplog-static)
+	set(cpplog_LIBS cpplog)

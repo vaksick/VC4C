@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.1)
+cmake_minimum_required (VERSION 3.24)
 include(${CMAKE_ROOT}/Modules/ExternalProject.cmake)
 # XXX required as long as we need to retrieve the VC4C compiler output path for the install precompiled headers command
 cmake_policy(SET CMP0026 OLD)
@@ -7,7 +7,7 @@ cmake_policy(SET CMP0026 OLD)
 # General configuration
 ####
 # Option to enable/disable test-program
-option(BUILD_TESTING "Build testing program" ON)
+option(BUILD_TESTING "Build testing program" OFF)
 # Option to enable/disable cross compilation
 option(CROSS_COMPILE "Cross compile for Raspbian" OFF)
 # Option whether to include the SPIR-V Tools front-end
