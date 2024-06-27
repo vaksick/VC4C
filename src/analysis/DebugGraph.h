@@ -11,6 +11,7 @@
 
 #include <fstream>
 #include <functional>
+#include <cstdint>
 
 #ifndef NDEBUG
 // LCOV_EXCL_START
