@@ -934,7 +934,7 @@ void BitcodeReader::parseInstruction(
         // for arrays, the allocated type is the array type, so we don't need to handle them special here
         const DataType contentType = toDataType(module, alloca->getAllocatedType());
         const DataType pointerType = toDataType(module, alloca->getType());
-        unsigned alignment = alloca->getAlignment();
+        unsigned alignment = alloca->getAlign();
         auto it = method.stackAllocations.emplace(
             StackAllocation(("%" + alloca->getName()).str(), pointerType, contentType.getInMemoryWidth(), alignment));
         localMap[alloca] = &(*it.first);
