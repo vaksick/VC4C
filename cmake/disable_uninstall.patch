@@ -1,0 +1,10 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 982be58..6c3c2bd 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -103,4 +103,4 @@ install(DIRECTORY include/ DESTINATION include/cpplog FILES_MATCHING PATTERN "*.
+ # Exports the target (to be used by CMake to find the SOURCE library)
+ export(TARGETS cpplog FILE cpplog-exports.cmake)
+ # Adds custom uninstall command
+-add_custom_target(uninstall "${CMAKE_COMMAND}" -P "cmake_uninstall.cmake")
++#add_custom_target(uninstall "${CMAKE_COMMAND}" -P "cmake_uninstall.cmake")
