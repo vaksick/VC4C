@@ -16,7 +16,7 @@ else()
 	ExternalProject_Add( cpplog-project
 		PREFIX 				${CMAKE_BINARY_DIR}/cpplog
 		GIT_REPOSITORY 		https://github.com/doe300/cpplog.git
-		GIT_TAG				master
+		GIT_TAG				v0.6
 		UPDATE_COMMAND 		git pull -f https://github.com/doe300/cpplog.git
 		CMAKE_ARGS 			-DCPPLOG_CUSTOM_LOGGER=true -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
 		STEP_TARGETS 		build	#If we set our dependency on this, the install step is skipped
